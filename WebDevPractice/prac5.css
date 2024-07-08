@@ -1,0 +1,28 @@
+p{
+    font-family: roboto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#l1{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+#USD{
+    font-size: 20px;
+    color: rgb(96,96,96);
+}
+
+#L2{
+    color: rgb(7, 165, 7);
+    margin-bottom: 5px;
+}
+
+#L3{
+    color: rgb(96,96,96);
+}
+
+#L3-Span{
+    color: red;
+}

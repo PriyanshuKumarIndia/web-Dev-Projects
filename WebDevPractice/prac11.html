@@ -1,0 +1,107 @@
+<style>
+    .Main{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Home{
+        /* background-color: lightcoral; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 8px;
+        height: 40px;
+        align-items: center;
+    }
+
+    .Home-text{
+        flex: 1;
+    }
+
+    .Notification{
+        /* background-color: lightgreen; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 8px;
+        height: 40px;
+        align-items: center;
+    }
+
+    .Message{
+        /* background-color: lightslategray; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 8px;
+        height: 40px;
+        align-items: center;
+    }
+
+    .Num-text{
+        width: 40px;
+        height: 20px;
+    }
+
+    .Not-num{
+        background-color: rgba(0, 123, 255, 0.999);
+        color: white;
+        font-weight: bold;   
+        padding-left: 16px;
+        padding-bottom: 5px; 
+        width: 40px;
+        height: 35px;
+        border-radius: 100px;
+    }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Main">
+
+        <div class="Home">
+            <p class="Home-text">
+                Home
+            </p>
+
+           <div class="Not-num">
+                <p class="Num-text">
+                    14
+                </p>
+           </div>
+        </div>
+
+        <div class="Notification">
+            <p class="Notification-text">
+                Notifications
+            </p>
+
+            <div class="Not-num">
+                <p class="Num-text">
+                    3
+                </p>
+           </div>
+        </div>
+
+        <div class="Message">
+            <p class="Msg-text">
+                Messages
+            </p>
+
+            <div class="Not-num">
+                <p class="Num-text">
+                    5
+                </p>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

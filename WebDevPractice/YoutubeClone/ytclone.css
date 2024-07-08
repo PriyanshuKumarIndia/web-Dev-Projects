@@ -1,0 +1,295 @@
+.Header{
+    background-color: white;
+    margin-bottom: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    /* border: none; */
+    border-bottom-width: 1px; 
+    border-bottom-style: solid;
+    border-bottom-color: rgb(196,196,196);
+    z-index: 2;   
+}
+
+.Upload-img{
+    height: 27px;
+}
+
+.Channel-img{
+    height: 30px;
+    border-radius: 15px;
+}
+
+.R1,.R2{
+    height: 30px;
+    width: 40px;
+}
+
+.Menu-logo{
+    height: 26px;
+    margin: 0px 24px;
+}
+
+.Youtube-logo{
+    height: 20px;
+}
+
+.Voice-logo{
+    height: 25px;
+    width: 25px;
+}
+
+.Search-box{
+    height: 35px;
+    flex: 1;
+    padding-left: 20px;
+    margin-left: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(96,96,96);
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.3);
+    width: 35px;
+}
+
+.Search-box::placeholder{
+    padding-left: 13px;
+    font-size: 16px;
+}
+
+.Search-button{
+    display: flex;
+    height: 39px;
+    width: 60px;
+    padding: 5px 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-right: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(96,96,96);
+    margin-left: -1px;
+    position: relative;
+}
+
+.Search-button .Tooltip{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    color: black;
+    bottom: -39px;
+    left: 0px;
+    background-color: gray;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Search-button:hover .Tooltip{
+    opacity: 1;
+}
+
+.Voice-button:hover .Tooltip{
+    opacity: 1;
+}
+
+.Voice-button .Tooltip{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    color: black;
+    width: 140px;
+    bottom: -39px;
+    left: -50px;
+    padding: 4px 3px;
+    background-color: gray;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Voice-button{
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 38px;
+    border-radius: 30px;
+    margin-right: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(96,96,96);
+    position: relative;
+}
+
+.Left-portion{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 180px;
+}
+
+.Middle-portion{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 60px;
+    max-width: 660px;
+}
+
+.Right-portion{
+    display: flex;
+    align-items: center;
+    width: 190px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.Notification-count{
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    top: -3px;
+    right: 8px;
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+
+.R2{
+    position: relative;
+}
+
+.Side-bar{
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    bottom: 0px;
+    width: 70px;
+    z-index: 5;
+    background-color: white;
+}
+
+.T1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.Home-button{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Home-button:hover{
+    height: 90px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.Home-img{
+    height: 30px;
+    width: 60px;
+}
+
+.Abs-prac{
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 8px;
+    bottom: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Image-portion{
+    position: relative;
+}
+
+
+
+
+body{
+    margin: 0px;
+    padding-top: 85px;
+    padding-left: 65px;
+    margin-bottom: 3000px;
+    background-color: lightgray;
+}
+
+.Main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    column-gap: 15px;
+    row-gap: 40px;
+    margin: 0px 30px;
+}
+
+@media (max-width: 800px){
+    .Main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 801px) and (max-width : 1199px){
+    .Main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px){
+    .Main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.Cat{
+    width: 100%;
+}
+
+.Icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.Info-portion{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 10px;
+    margin-top: 8px;
+}
+
+p{
+    margin: 0px;
+}
+
+.Title{
+    margin-bottom: 10px;
+}
+
+.Title1{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.M-text{
+    margin-bottom: 5px;
+}
+
+.M-text1,.L-text1{
+    color: rgb(96,96,96);
+    font-size: 14px;
+}

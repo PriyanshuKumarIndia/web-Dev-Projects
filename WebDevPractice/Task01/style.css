@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.menu-item {
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: #FFD700; /* Change to the desired hover color */
+}
+
+.sticky {
+    background-color: #555; /* Change to the desired color when scrolled */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin: 5px 0;
+    }
+}
+
+.zone1 > img{
+    height: 100vh;
+}
+
+#img2{
+    height: 1500px;
+}

@@ -1,0 +1,85 @@
+<style>
+    .Header{
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 5px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+        z-index: 2;
+    }
+
+    .Div1{
+        background-color: lightblue;
+        height: 300px;
+        width: 300px;
+    }
+
+    .Div2{
+        background-color: lightpink;
+        height: 300px;
+        width: 300px;
+        position: relative;
+    }
+
+    body{
+        height: 3000px;
+        padding-top: 60px;
+        padding-left: 65px;
+    }
+
+    .Side-bar{
+        background-color: lightgreen;
+        position: fixed;
+        top: 55px;
+        left: 0px;
+        bottom: 0px;
+        width: 60px;
+    }
+
+    .Abs-prac{
+        background-color: black;
+        color: white;
+        position: absolute;
+        right: 0px;
+        bottom: 15px;
+    }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Header">
+        Header
+    </div>
+
+    <div class="Abs-prac">
+        absolute
+    </div>
+
+    <div class="Side-bar">
+        Side bar
+        <div class="Abs-prac">
+            absolute
+        </div>
+    </div>
+
+    <div class="Div1">
+        div1
+    </div>
+
+    <div class="Div2">
+        div2
+        <div class="Abs-prac">
+            16:02
+        </div>
+    </div>
+</body>
+</html>

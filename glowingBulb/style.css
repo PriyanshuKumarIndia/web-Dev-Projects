@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bulb-container{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#turn-on,#turn-off,#toggle{
+    margin-left: 25px;
+}
+
+
+.bulb{
+    background-color: orange;
+}

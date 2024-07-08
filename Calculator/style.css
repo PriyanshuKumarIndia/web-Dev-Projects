@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+.header>h1{
+    text-align: center;
+    background-color: blueviolet;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+#main{
+    height: 80vh;
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+#calc{
+    height: 100%;
+    width: 20%;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border-radius: 8%;
+}
+
+#calc>.row{
+    height: 11%;
+    width: 96%;
+    margin: auto;
+    margin: 1.5% 1.5%;
+    margin-right: 0;
+}
+
+.row-btn{
+    height: 100%;
+    width: 23%;
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    border: none;
+    
+}
+
+.row-1>button{
+    background-color: lightgrey;
+    color: black;
+    font-size: larger;
+}
+
+.zero-btn{
+    width: 47%;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.input-div{
+    margin: auto;
+    width: 98%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    height: 90%;
+    width: 90%;
+    font-size: 2.5em;
+    padding: 0px 8px;
+    border-radius: 8px;
+    text-align: right;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.col-4,.row-1>.col-4{
+    background-color: orange;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.row-5{
+    margin-bottom: 10px;
+}
