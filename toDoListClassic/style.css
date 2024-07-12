@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(145deg,#153677,#4e085f);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    min-height: fit-content;
+    background: white;
+    margin: 50px auto 20px;
+    padding:40px 30px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    background-color: #d0d1d1;
+    margin: 5px 10px 5px 0px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 15px;
+    /* height: 2rem; */
+}
+
+.row input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#add-btn{
+    border: none;
+    outline: none;
+    background: #ff5945;
+    padding: 16px 40px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    cursor:cell;
+    font-size: 15px;
+}
+
+#task-list{
+    margin-top: 20px;
+}
+
+#task-list li{
+    list-style: none;
+    margin: 20px 0px 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+.check{
+    text-decoration: line-through;
+}
+
+#del-btn{
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    cursor:cell;
+}
