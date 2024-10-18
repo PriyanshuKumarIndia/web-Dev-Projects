@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+    width: 60vw;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    border: 1.5px solid rgba(255,255,255,0.18);
+}
+
+.nav-bar a{
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+}

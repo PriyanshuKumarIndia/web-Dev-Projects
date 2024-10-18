@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100vw;
+    background-color: rgb(140, 19, 140);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.header{
+    font-size: 2rem;
+    margin: 4px 0px;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.mainGame{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.imgDiv img{
+    height: 6rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.hide{
+    display: none;
+}
+
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+
+.turn{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+@media screen and (max-width: 700px) {
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainGame{
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
